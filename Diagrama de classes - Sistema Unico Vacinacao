@@ -89,7 +89,7 @@ Unidade "1"*-->"n" Agendamento
 Fabricante "1"*-->"n" Vacina
 Agendamento "n"<--*"1" Vacina
 Agendamento "n"<--*"1" Cidadao
-Cidadao "1" *--> "1" Cartao
+Cidadao "1" <--* "1" Cartao
 
 
 @enduml
