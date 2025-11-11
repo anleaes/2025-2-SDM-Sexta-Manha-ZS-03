@@ -1,4 +1,6 @@
 sistemaVacinacaoapp/__pycache__/
 /apps/enderecos/__pycache__/*
 /apps/enderecos/migrations/*
+/apps/cartoes/__pycache__/*
+/apps/cartoes/migrations/*
 .env
