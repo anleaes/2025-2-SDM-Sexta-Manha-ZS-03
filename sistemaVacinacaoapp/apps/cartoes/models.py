@@ -1,7 +1,7 @@
 from django.db import models
 
 class Cartao(models.Model):
-    numero = models.CharField('Numero', max_length=50, min_length=10, unique=True)
+    numero = models.CharField('Numero', max_length=50, unique=True)
     criacao = models.DateField()
     zona = models.CharField('Zona', max_length=30, choices=[
         ('SUL', 'Sul'),
