@@ -8,5 +8,10 @@ class Cidadao(models.Model):
     nascimento = models.DateField()
     idade = models.IntegerField()
 
+    class Meta: 
+        verbose_name = 'Cidadao'
+        verbose_name_plural = 'Cidadaos'
+        ordering =['id']
+
     def __str__(self):
         return self.nome
