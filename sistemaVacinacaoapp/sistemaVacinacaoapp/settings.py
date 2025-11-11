@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'enderecos.apps.EnderecosConfig',
     'cartoes.apps.CartoesConfig',
+    'cidadaos.apps.CidadaosConfig',
 ]
 
 MIDDLEWARE = [
