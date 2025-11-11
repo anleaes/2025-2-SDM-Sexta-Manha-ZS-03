@@ -1,4 +1,8 @@
 from django.shortcuts import render
-from .models import Order
 from rest_framework import viewsets
-from .serializer import OrderSerializer
+from .models import Endereco
+from .serializer import EnderecosSerializer
+
+class EnderecosViewSet(viewsets.ModelViewSet):
+    queryset = Endereco.objects.all()
+    serializer_class = EnderecosSerializer
