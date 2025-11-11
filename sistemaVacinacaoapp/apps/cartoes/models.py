@@ -13,6 +13,11 @@ class Cartao(models.Model):
         ('ATIVO', 'Ativo'),
         ('BLOQUEADO', 'Bloqueado'),
         ])
+    
+    class Meta: 
+        verbose_name = 'Cartao'
+        verbose_name_plural = 'Cartoes'
+        ordering =['id']
 
     def __str__(self):
         return self.numero
