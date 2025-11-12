@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'cartoes.apps.CartoesConfig',
     'cidadaos.apps.CidadaosConfig',
     'unidades.apps.UnidadesConfig',
+    'fabricantes.apps.FabricantesConfig',
 ]
 
 MIDDLEWARE = [
