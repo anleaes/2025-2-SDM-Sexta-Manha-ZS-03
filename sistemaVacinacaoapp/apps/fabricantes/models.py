@@ -1,8 +1,8 @@
 from django.db import models
-from enderecos.models import Enderecos
+from enderecos.models import Endereco
 
 class Fabricante(models.Model):
-    endereco = models.OneToOneField(Enderecos, on_delete=models.CASCADE)
+    endereco = models.OneToOneField(Endereco, on_delete=models.CASCADE)
     telefone = models.CharField(max_length=20)
     nome = models.CharField(max_length=100)
     cnpj = models.CharField(max_length=50)
