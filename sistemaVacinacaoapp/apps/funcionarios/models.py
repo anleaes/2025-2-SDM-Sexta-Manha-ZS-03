@@ -15,5 +15,10 @@ class Funcionario(models.Model):
         ])
     registro = models.CharField(max_length=30)
 
+    class Meta: 
+        verbose_name = 'Funcionario'
+        verbose_name_plural = 'Funcionarios'
+        ordering =['id']
+
     def __str__(self):
         return f"{self.nome}, {self.cargo}."
