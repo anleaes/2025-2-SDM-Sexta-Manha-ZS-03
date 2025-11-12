@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'cidadaos.apps.CidadaosConfig',
     'unidades.apps.UnidadesConfig',
     'fabricantes.apps.FabricantesConfig',
+    'vacinas.apps.VacinasConfig',
 ]
 
 MIDDLEWARE = [
