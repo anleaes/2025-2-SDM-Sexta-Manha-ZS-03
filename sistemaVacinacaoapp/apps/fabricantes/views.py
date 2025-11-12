@@ -1,3 +1,4 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import Fabricante
+from rest_framework import viewsets
+from .serializer import FabricanteSerializer
