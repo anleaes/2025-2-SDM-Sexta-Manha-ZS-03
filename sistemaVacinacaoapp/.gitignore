@@ -7,5 +7,6 @@ sistemaVacinacaoapp/__pycache__/
 /apps/cidadaos/migrations/*
 /apps/unidades/__pycache__/*
 /apps/unidades/migrations/*
-
+/apps/fabricantes/__pycache__/*
+/apps/fabricantes/migrations/*
 .env
