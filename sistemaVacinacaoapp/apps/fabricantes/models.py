@@ -8,5 +8,11 @@ class Fabricante(models.Model):
     cnpj = models.CharField(max_length=50)
     email = models.EmailField()
 
+    class Meta: 
+        verbose_name = 'Fabricante'
+        verbose_name_plural = 'Fabricantes'
+        ordering =['id']
+
+
     def __str__(self):
         return self.nome
