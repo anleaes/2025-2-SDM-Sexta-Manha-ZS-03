@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from .models import Fabricante
+from rest_framework import viewsets
+from .serializer import FabricanteSerializer
 
-# Create your views here.
+class FabricanteViewSet(viewsets.ModelViewSet):
+    queryset = Fabricante.objects.all()
+    serializer_class = FabricanteSerializer
