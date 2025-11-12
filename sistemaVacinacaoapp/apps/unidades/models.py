@@ -14,6 +14,10 @@ class Unidade(models.Model):
         ('HOSPITAL', 'Hospital'),
         ('CLINICA', 'Clínica'),
         ])
-    
+    class Meta:
+        verbose_name = 'Unidade'
+        verbose_name_plural = 'Unidades'
+        ordering =['id']
+        
     def __str__(self):
         return self.nome
