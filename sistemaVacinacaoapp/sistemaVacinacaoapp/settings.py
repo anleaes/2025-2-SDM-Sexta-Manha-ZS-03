@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'unidades.apps.UnidadesConfig',
     'fabricantes.apps.FabricantesConfig',
     'vacinas.apps.VacinasConfig',
+    'funcionarios.apps.FuncionariosConfig',
 ]
 
 MIDDLEWARE = [
