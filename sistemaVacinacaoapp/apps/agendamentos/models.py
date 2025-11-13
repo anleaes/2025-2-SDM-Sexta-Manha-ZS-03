@@ -13,7 +13,7 @@ class Agendamento(models.Model):
         ('CANCELADO', 'Cancelado'),
         ])
     observacoes = models.TextField()
-    prioridade = models.CharField('Status', max_length=30, choices=[
+    prioridade = models.CharField('Prioridade', max_length=30, choices=[
         ('BAIXA', 'Baixa'),
         ('MEDIA', 'Média'),
         ('ALTA', 'Alta'),
