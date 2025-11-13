@@ -1,10 +1,10 @@
 from django.db import models
 
 class Agendamento(models.Model):
-    unidade = models.ForeignKey('unidade.Unidade', on_delete=models.CASCADE)
-    vacina = models.ForeignKey('vacina.Vacina', on_delete=models.CASCADE)
-    cidadao = models.ForeignKey('cidadao.Cidadao', on_delete=models.CASCADE)
-    funcionario = models.ForeignKey('funcionario.Funcionario', on_delete=models.CASCADE)
+    unidade = models.ForeignKey('unidades.Unidade', on_delete=models.CASCADE)
+    vacina = models.ForeignKey('vacinas.Vacina', on_delete=models.CASCADE)
+    cidadao = models.ForeignKey('cidadaos.Cidadao', on_delete=models.CASCADE)
+    funcionario = models.ForeignKey('funcionarios.Funcionario', on_delete=models.CASCADE)
 
     dataMarcada = models.DateField()
     status = models.CharField('Status', max_length=30, choices=[
