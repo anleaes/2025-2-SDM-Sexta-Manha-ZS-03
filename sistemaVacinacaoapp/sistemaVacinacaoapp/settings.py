@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'vacinas.apps.VacinasConfig',
     'funcionarios.apps.FuncionariosConfig',
     'agendamentos.apps.AgendamentosConfig',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
