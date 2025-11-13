@@ -18,6 +18,11 @@ class Agendamento(models.Model):
         ('MEDIA', 'Média'),
         ('ALTA', 'Alta'),
         ])
+    
+    class Meta: 
+        verbose_name = 'Agendamento'
+        verbose_name_plural = 'Agendamentos'
+        ordering =['id']
 
     def __str__(self):
         return f"{self.cidadao} - {self.dataMarcada} - {self.status}. Vacina: {self.vacina}"
