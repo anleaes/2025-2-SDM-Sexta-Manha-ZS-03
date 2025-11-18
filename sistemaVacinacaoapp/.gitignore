@@ -15,4 +15,3 @@ sistemaVacinacaoapp/__pycache__/
 /apps/funcionarios/migrations/*
 /apps/agendamentos/__pycache__/*
 /apps/agendamentos/migrations/*
-.env
