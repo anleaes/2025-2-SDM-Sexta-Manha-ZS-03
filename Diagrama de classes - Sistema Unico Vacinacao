@@ -80,19 +80,16 @@ class Fabricante{
 
 
 
-Endereco "1" *--> "n" Cidadao
-Endereco "1"*-->"1" Unidade
-Endereco "1"*-->"1" Fabricante
+Endereco "n" *-up-> "n" Cidadao
+Endereco "n"*-->"1" Unidade
+Endereco "n"*-->"1" Fabricante
 Agendamento "1"<--*"n" Funcionario
 Funcionario "n"<--*"1" Unidade
 Unidade "1"*-->"n" Agendamento
 Fabricante "1"*-->"n" Vacina
 Agendamento "n"<--*"1" Vacina
-Agendamento "n"<--*"1" Cidadao
-Cidadao "1" <--* "1" Cartao
+Agendamento "n"<-up-*"1" Cidadao
+Cidadao "n" <--* "1" Cartao
 
 
 @enduml
-
-
-
