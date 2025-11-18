@@ -3,7 +3,6 @@ from enderecos.models import Endereco
 from unidades.models import Unidade
 
 class Funcionario(models.Model):
-    endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE)
     unidade = models.ForeignKey(Unidade, on_delete=models.CASCADE)
     nome = models.CharField(max_length=100)
     cpf = models.CharField(max_length=15)
