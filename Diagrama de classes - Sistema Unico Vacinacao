@@ -13,7 +13,6 @@ class Cidadao {
 }
 
 class Funcionario {
-    - endereco: Endereco
     - unidade: UnidadeSaude
     - nome: char
     - cpf: char
