@@ -1,8 +1,8 @@
 from django.db import models
 
 class Cidadao(models.Model):
-    endereco = models.ForeignKey('enderecos.Endereco', on_delete=models.CASCADE)
-    carteirinha = models.OneToOneField('cartoes.Cartao', on_delete=models.CASCADE)
+    endereco = models.ManyToManyField('enderecos.Endereco')
+    carteirinha = models.ForeignKey('cartoes.Cartao', on_delete=models.CASCADE)
     nome = models.CharField(max_length=100)
     cpf = models.CharField(max_length=15)
     nascimento = models.DateField()

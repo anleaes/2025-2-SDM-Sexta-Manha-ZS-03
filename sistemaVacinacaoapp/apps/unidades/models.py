@@ -2,7 +2,7 @@ from django.db import models
 from enderecos.models import Endereco
 
 class Unidade(models.Model):
-    endereco = models.OneToOneField(Endereco, on_delete=models.CASCADE)
+    endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE)
     nome = models.CharField(max_length=100)
     zona = models.CharField('Zona', max_length=30, choices=[
         ('URBANA', 'Urbana'),
