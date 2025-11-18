@@ -1,0 +1,94 @@
+@startuml
+
+Title: Sistema Único de Vacinação
+
+class Cidadao {
+    - endereco: Endereco
+    - carteirinha: Cartao
+    - nome: char
+    - cpf: char
+    - nascimento: Date
+    - idade; int
+    + toString()
+}
+
+class Funcionario {
+    - unidade: UnidadeSaude
+    - nome: char
+    - cpf: char
+    - cargo: char
+    - registro: char
+    + toString()
+}
+
+class Vacina {
+    - fabricante: Fabricante
+    - nome: char
+    - doses: Int
+    - intervalo: Int
+    - doenca: char
+    + toString()
+}
+
+class Unidade {
+    - endereco: Endereco
+    - nome: char
+    - zona: Enum
+    - telefone: char
+    - tipo: Enum
+    + toString()
+}
+
+class Agendamento {
+    - unidade: UnidadeSaude
+    - vacina: Vacina
+    - cidadao: Cidadao
+    - funcionario: Funcionario
+    - dataMarcada: Date
+    - status: Enum
+    - observacoes: text
+    - prioridade: Enum
+    + toString()
+}
+
+class Endereco{
+    - rua: char
+    - cidade: char
+    - estado: char
+    - bairro: char
+    + toString()
+}
+
+class Cartao{
+   - numero: char 
+   - criacao: Date 
+   - zona: char
+   - status: Enum
+   + toString()
+}
+
+class Fabricante{
+    - endereco: Endereco
+    - telefone: char
+    - nome: char
+    - cnpj: char
+    - email: char
+    + toString()
+}
+
+
+
+
+Endereco "n" *-up-> "n" Cidadao
+Endereco "n"*-->"1" Unidade
+Endereco "n"*-->"1" Fabricante
+Agendamento "1"<--*"n" Funcionario
+Funcionario "n"<--*"1" Unidade
+Unidade "1"*-->"n" Agendamento
+Fabricante "1"*-->"n" Vacina
+Agendamento "n"<--*"1" Vacina
+Agendamento "n"<-up-*"1" Cidadao
+Cidadao "n" <--* "1" Cartao
+
+
+@enduml
