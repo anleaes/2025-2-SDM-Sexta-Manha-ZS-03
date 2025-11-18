@@ -15,5 +15,3 @@ Configuração inicial
 - cd sistemaVacinacaoapp
 - python manage.py runserver 
 
-Banco de dados
-- para funcionar, ter o arquivo .env com secrety key e informações do banco 
